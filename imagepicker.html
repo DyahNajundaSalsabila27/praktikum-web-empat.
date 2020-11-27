@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IMAGE PICKER</title>
+</head>
+<body  style="margin: 100px">
+	
+	<h2> PENAYANGAN SELASA, 24 NOVEMBER 2020 </h2>
+
+	<center>
+		<select onchange="gantigambar();" id="listgambar">
+			<option value="C:\Users\USER\Documents\chat\bioskop.jpg">PILIH FILM</option>
+			<option value="C:\Users\USER\Documents\chat\51035-belok-kanan-barcelona-imdb.jpg">BELOK KANAN BARCELONA</option>
+			<option value="C:\Users\USER\Documents\chat\MARIPOSA.jpg">MARIPOSA</option>
+			<option value="C:\Users\USER\Documents\chat\NONA.jpg">NONA</option>
+			<option value="C:\Users\USER\Documents\chat\RENTANG.jpg">RENTANG KISAH</option>
+			<option value="C:\Users\USER\Documents\chat\SEPERTI.jpg">SEPERTI HUJAN YANG JATUH KE BUMI</option>
+			<option value="C:\Users\USER\Documents\chat\hp1.jpg">Harry Potter and the Sorcerer's Stone</option>
+			<option value="C:\Users\USER\Documents\chat\hp2.jpg">Harry Potter and the Chamber of Secrets</option>
+			<option value="C:\Users\USER\Documents\chat\hp3.jpeg">Harry Potter and the Prisoner of Azkaban</option>
+			
+		</select>
+	</center>
+		<br/>
+	<img src=C:\Users\USER\Documents\chat\bio.jpg style="width: 100%" id="gambar">
+
+</body>
+<script type="text/javascript">
+	function gantigambar() {
+		let gambar = document.getElementById("listgambar").value;
+		document.getElementById("gambar").src = gambar;
+		alert("Ini Gambar " + gambar);
+	}
+</script>
+</html>
